@@ -39,8 +39,6 @@ fn main() {
         println!("Problem parsing arguments: {err}");
         process::exit(1)
     });
-    println!("searching for query {}", config.file_path);
-    println!("in file_path, {}", config.file_path);
 
     if let Err(e) = run(config) {
         println!("Application error : {e}");
